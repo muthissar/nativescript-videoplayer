@@ -359,12 +359,12 @@ export class Video extends videoCommon.Video {
         }
     }
 	
-	private setPlaybackParams(playbackParams: android.media.PlaybackParams): void {
+	private _setPlaybackParams(playbackParams: android.media.PlaybackParams): void {
 		this.mediaPlayer.setPlaybackParams(playbackParams);
 	}
 	
 	public setPlaybackSpeed(speedMultiplier: number): void{
-		this.setPlaybackParams(this.mediaPlayer.getPlaybackParams().setSpeed(speedMultiplier));
+		this._setPlaybackParams(this.mediaPlayer.getPlaybackParams().setSpeed(speedMultiplier));
 	}
 
     public _setNativeVideo(nativeVideo: any): void {
