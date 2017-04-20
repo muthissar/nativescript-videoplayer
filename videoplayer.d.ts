@@ -80,7 +80,8 @@ export declare class Video extends View {
      */
     stop(): void;
 
-
+	setPlaybackSpeed(speedMultiplier) : void;
+	
     /**
      * *** IOS ONLY ***
      * Update the video player with an AVAsset file.

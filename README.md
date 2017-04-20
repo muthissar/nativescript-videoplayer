@@ -115,6 +115,7 @@ Attribute to specify an event callback to execute when the video has started pla
 ### Android only
 
 - **stop()** - Stop the playback - this resets the player and remove the video src
+- **setPlaybackSpeed(speedMultiplier)** - Multiplies the play speed with speedMultiplier
 
 ## Observable Properties
 
