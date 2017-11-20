@@ -409,7 +409,9 @@ export class Video extends common.Video {
 	}
 	
 	public setPlaybackSpeed(speedMultiplier: number): void{
-		this._setPlaybackParams(this.mediaPlayer.getPlaybackParams().setSpeed(speedMultiplier));
+        let playbackParams = this.mediaPlayer.getPlaybackParams();
+        playbackParams = playbackParams.setSpeed(speedMultiplier);
+		this._setPlaybackParams(playbackParams);
 	}
 
   public _setNativeVideo(nativeVideo: any): void {
